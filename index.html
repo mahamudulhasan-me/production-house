@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              black: "#131313",
+            },
+            fontFamily: {
+              babes: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Jhakanaka Production House</title>
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header>
+      <nav
+        class="sticky top-0 left-0 right-0 bg-white z-50 flex justify-between py-6 px-[10%] font-babes"
+      >
+        <h2 class="text-2xl text-bold">Jhaka naka Production</h2>
+        <div>
+          <ul class="flex gap-8">
+            <li>About Us</li>
+            <li>Our Movies</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </nav>
+      <section class="bg-[url('./images/banner.jpg')] bg-cover h-screen">
+        <div class="w-4/5 mx-auto h-full flex items-center">
+          <div class="font-babes text-white">
+            <h5 class="text-2xl">Movie production studio</h5>
+            <h1 class="text-7xl">Films MAde to</h1>
+            <h1 class="text-7xl text-yellow">Perfection</h1>
+            <p class="font-montserrat max-w-lg mb-14">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <a
+              href="#"
+              class="px-6 py-4 border-2 text-lg hover:border-yellow transition-all hover:text-yellow"
+              >Discover More</a
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Header Section End -->
+  </body>
+</html>
